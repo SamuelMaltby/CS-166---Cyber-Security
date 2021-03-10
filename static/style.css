@@ -1,0 +1,38 @@
+/***************************************************************************************
+*    Title: Catamount Bank / style.css source code
+*    Author: James Eddy
+*    Date: 9/29/2020
+*    Availability: https://gitlab.uvm.edu/James.Eddy/cs-166-catamount-community-bank
+*
+***************************************************************************************
+*
+* The css setup for my lab was based on Prof. Eddy's Catamount Bank Code.
+*
+***************************************************************************************/
+
+#masthead {
+    background-color: steelblue;
+    padding: 20px;
+    border-bottom: #485f6e 1px solid;
+    width: 100%;
+}
+
+#masthead img {
+    margin-right: 1em;
+}
+
+#masthead h1 {
+    font-family: serif;
+    display: inline-block;
+    color: ghostwhite;
+}
+
+.tagline {
+    display: inline-block;
+    margin-top: 1em;
+    font-style: normal;
+}
+
+#content{
+    padding: 1.5em 3em;
+}

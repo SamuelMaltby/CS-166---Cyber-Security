@@ -1,0 +1,48 @@
+<!--/***************************************************************************************
+*    Title: Catamount Bank / login.html source code
+*    Author: James Eddy
+*    Date: 9/29/2020
+*    Availability: https://gitlab.uvm.edu/James.Eddy/cs-166-catamount-community-bank
+*
+***************************************************************************************/
+*
+* The HTML setup for my lab was based on Prof. Eddy's Catamount Bank Code.
+*
+***************************************************************************************/-->
+
+
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card">
+    <div class="card-body">
+        <div class="row mt-3">
+            <div class="col md-6">
+                <form action="/signup" method="POST"
+                      id="login_form">
+                    <div class="form-group">
+                        <label for="username">Please enter a username:</label><input
+                            class="form-control" type="text" id="username"
+                            name="username" required><br/>
+                        <label for="password">Please enter a password (enter 'STRONG' for a generated password):</label><input
+                            class="form-control" type='password' id="password"
+                            name="password" required>
+                        <h6>* Password must contain: *</h6>
+                        <ul>
+                            <li>Between 8 - 25 characters</li>
+                            <li>At lest 1 number</li>
+                            <li>At lest 1 uppercase letter</li>
+                            <li>At lest 1 lowercase letter</li>
+                            <li>At lest 1 special character (!@#$%^&*)</li>
+                        </ul>
+                        <button type="submit" class="btn btn-primary mt-4">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

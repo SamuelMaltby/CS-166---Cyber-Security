@@ -1,0 +1,22 @@
+Sam Maltby
+CS 166
+Lab 8.0
+12/1/2020
+
+For this lab I expanded the company intranet system from lab one. I incorporated flask web framework
+and created a database to store user data with SQLite. The user can decide to login or create an
+account. When a user creates an account, their username must be unique from the other users in the
+database or they get a message to create a new one. Their password is hashed using SHA-256 and salted
+with a random 40 character length and then stored in the database. The user can choose to have a
+strong password generated for them automatically. There are three access levels granted for users.
+Each new user is assigned the lowest access level andcan only view the IT Helpdesk and Logout pages.
+The users with admin access can visit all the pages and the users with limited access can only view
+a few. When a user logs in the password, the password for that user stored in the database is compared
+and if it is a match the user is allowed in the system.
+
+To run the program, run the menu.py file.
+There are a few test users automatically fill the database upon running to test the access levels.
+
+username1 / password1 / access level admin
+username2 / password2 / limited access level
+username3 / password3 / lowest access level
